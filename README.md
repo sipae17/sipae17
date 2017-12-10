@@ -5,7 +5,7 @@
 
 ## To get the project up and running
 
-* Clone the folder as ZIP to your computer. Go to Visual Studio, click 'Open solution/project...' and open the solution 'SiebePaesschesoone.sln'. Normally that should import the 3 projects 'ClassLibraryForSiebePaesschesoone', 'SiebePaesschesoone' and 'SiebePaesschesooneTest' (they contain referencese to each other).
+* Clone the folder as ZIP to your computer. Go to Visual Studio, click 'Open solution/project...' and open the solution 'SiebePaesschesoone.sln'. Normally that should import the 3 projects 'ClassLibraryForSiebePaesschesoone', 'SiebePaesschesoone' and 'SiebePaesschesooneTest' (they contain references to each other).
 * Change all three filepaths in the HomeController, so that it refers to the text.txt document that we are using. These filpaths are situated on line 43, 110 and 143 (in HomeController.cs under SiebePaesschesoone). To easily find the filepath, simply click on the text.txt file in solution explorer and click properties. The pop-up window shows the path of the file. Remember to use '/' and not backslashes.
 
 
