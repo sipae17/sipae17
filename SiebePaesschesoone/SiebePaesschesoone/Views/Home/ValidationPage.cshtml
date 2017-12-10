@@ -1,0 +1,49 @@
+﻿@model ClassLibraryForSiebePaesschesoone.ValidationModel
+
+<style>
+div{
+    margin-top: 10px;
+}
+.fieldset-auto-width {
+        display: inline-block;
+        border: 1px solid;
+        margin-top: 2em;
+        border-radius: 10px;  
+        padding-top: 0.35em;
+        padding-bottom: 0.35em;
+        padding-left: 1em;
+        padding-right: 1em;
+        border-color: black;
+        background-color: #e7e7e7;
+}
+
+.field-validation-error {
+        font-weight: normal;
+}
+</style>
+
+<font color= "black" face="arial">
+    <div align="center">
+        <fieldset class="fieldset-auto-width">
+            @using (Html.BeginForm()) 
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                <div align="center">
+	                <br/>
+	                    <b>Authentication required. Give password:</b>
+	                <br/>
+                    <br/>
+                        <input type="password" name="Password" id="Password"/>
+                        @Html.ValidationMessageFor(model => model.Password)
+                </div>
+
+                <div align="center">
+                    <input type="button" class="btn btn-info" value="Go back" onclick="location.href='@Url.Action("Index")'"/>
+                    <input type="submit" value="Validate" class="btn btn-default" />
+                </div>
+            }
+        </fieldset>
+    </div>
+</font>

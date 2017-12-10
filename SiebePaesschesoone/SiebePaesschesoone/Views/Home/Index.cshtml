@@ -1,0 +1,90 @@
+﻿@model ClassLibraryForSiebePaesschesoone.ClientModel
+
+<style>
+.field-validation-error {
+	    font-weight: normal;
+}
+
+th{
+    padding: 5px;
+}
+
+.fieldset-auto-width {
+    display: inline-block;
+    border: 1px solid;
+	margin-top: 2em;
+	border-radius: 10px;  
+	padding-top: 0.35em;
+    padding-bottom: 0.35em;
+    padding-left: 1em;
+    padding-right: 1em;
+	border-color: black;
+	background-color: #e7e7e7;
+}
+
+</style>
+
+<body bgcolor="white" font-family: >
+<div align="center">
+<font color= "black" face="arial">
+<fieldset class = "fieldset-auto-width">
+<h2 align = "center">Submit your form to enter the prize draw</h2>
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <table align = "center">
+			<tr>
+					<th align ="left">Serial key:</th>
+                    <th><input type="text" name="SerialKey" id="SerialKey"></th>
+                    <th align ="right">@Html.ValidationMessageFor(model => model.SerialKey)</th>
+			</tr>
+            <tr>
+                    <th align ="left">First name:</th>
+                    <th><input type="text" name="FirstName" id="FirstName" pattern="^[a-zA-Z]+$"></th>
+                    <th align ="right">@Html.ValidationMessageFor(model => model.FirstName)</th>
+            </tr>
+            <tr>
+                    <th align ="left">Family name:</th>
+                    <th><input type="text" name="FamilyName" id="FamilyName" pattern="^[a-zA-Z]+$"></th>
+                    <th align ="right">@Html.ValidationMessageFor(model => model.FamilyName)</th>
+            </tr>
+            <tr>
+                    <th align ="left">Email:</th>
+                    <th><input type="email" name="EmailAddress" id="EmailAddress"></th>
+                    <th align ="right">@Html.ValidationMessageFor(model => model.EmailAddress)</th>
+            </tr>
+            <tr>
+	                <th align ="left">Phone number:</th>
+                    <th><input type="text" name="PhoneNumber" id="PhoneNumber" pattern="[0-9]{10}"></th>
+                    <th align ="right">@Html.ValidationMessageFor(model => model.PhoneNumber)</th>
+
+            </tr>
+            <tr>
+	                <th align ="left">Date of birth:</th>
+                    <th><input type="date" name="DateOfBirth" id="DateOfBirth"/></th>
+                    <th align ="right">@Html.ValidationMessageFor(model => model.DateOfBirth)</th>
+
+            </tr>
+            <tr>
+		            <th></th>
+                    <th align ="center"><input type="submit" value="Submit" class="btn-btn-default" /></th>
+	                <th align ="right">@ViewData["submitted"]</th>
+            </tr>
+	        <tr>
+                    <th></th>
+		            <th align ="center"><input type="button" class="btn-btn-default" value="View all submissions" onclick="location.href='@Url.Action("ValidationPage")'"/></th>
+	        </tr>
+
+       </table>
+}
+</fieldset>
+</font>
+</div>
+</body>
+
+
+
+
+

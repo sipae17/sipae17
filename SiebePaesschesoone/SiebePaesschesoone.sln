@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiebePaesschesoone", "SiebePaesschesoone\SiebePaesschesoone.csproj", "{F22656E5-09E2-47A2-A2F6-44FE3345DBF1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibraryForSiebePaesschesoone", "..\ClassLibraryForSiebePaesschesoone\ClassLibraryForSiebePaesschesoone\ClassLibraryForSiebePaesschesoone.csproj", "{9F9A1610-04C0-4DA0-B148-4726F6C0A2FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiebePaesschesooneTest", "SiebePaesschesooneTest\SiebePaesschesooneTest.csproj", "{153D7272-AA5D-43BC-8D52-E8C3823911C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F22656E5-09E2-47A2-A2F6-44FE3345DBF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F22656E5-09E2-47A2-A2F6-44FE3345DBF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F22656E5-09E2-47A2-A2F6-44FE3345DBF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F22656E5-09E2-47A2-A2F6-44FE3345DBF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F9A1610-04C0-4DA0-B148-4726F6C0A2FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F9A1610-04C0-4DA0-B148-4726F6C0A2FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F9A1610-04C0-4DA0-B148-4726F6C0A2FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F9A1610-04C0-4DA0-B148-4726F6C0A2FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{153D7272-AA5D-43BC-8D52-E8C3823911C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{153D7272-AA5D-43BC-8D52-E8C3823911C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{153D7272-AA5D-43BC-8D52-E8C3823911C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{153D7272-AA5D-43BC-8D52-E8C3823911C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
